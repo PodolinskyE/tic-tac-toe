@@ -1,6 +1,7 @@
 const TicTacToe = require('../src/tic-tac-toe.js');
 
 describe('TicTacToe', () => {
+      
     describe('#getCurrentPlayerSymbol', () => {
         it('should return correct player symbol', () => {
             let game;
@@ -567,6 +568,9 @@ describe('TicTacToe', () => {
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
         });
     });
+
+
+
     describe('#getFieldValue', () => {
         it('should return correct field value', () => {
             let game;
@@ -1180,6 +1184,11 @@ describe('TicTacToe', () => {
 
         });
     });
+
+
+
+
+
     describe('#isDraw', () => {
         it('should return false if game is not finished or there is a winner, and true if it is a draw', () => {
             let game;
@@ -4732,5 +4741,10 @@ describe('TicTacToe', () => {
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
         });
+
     });
+
+    
+
+
 });
